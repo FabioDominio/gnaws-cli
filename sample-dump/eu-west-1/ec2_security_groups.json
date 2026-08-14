@@ -1,0 +1,23 @@
+[
+  {
+    "GroupId": "sg-0aaa111111111111a",
+    "GroupName": "web-sg",
+    "Description": "Web server security group",
+    "VpcId": "vpc-0aaa111111111111a",
+    "Tags": [{"Key": "Name", "Value": "web-sg"}]
+  },
+  {
+    "GroupId": "sg-0bbb222222222222b",
+    "GroupName": "orphaned-sg",
+    "Description": "Security group from deleted service",
+    "VpcId": "vpc-0aaa111111111111a",
+    "Tags": [{"Key": "Name", "Value": "orphaned-sg"}]
+  },
+  {
+    "GroupId": "sg-0ccc333333333333c",
+    "GroupName": "old-rds-sg",
+    "Description": "Was used by RDS instance deleted months ago",
+    "VpcId": "vpc-0aaa111111111111a",
+    "Tags": [{"Key": "Name", "Value": "old-rds-sg"}]
+  }
+]

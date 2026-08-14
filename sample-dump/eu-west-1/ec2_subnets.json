@@ -1,0 +1,9 @@
+[
+  {
+    "SubnetId": "subnet-0aaa111111111111a",
+    "VpcId": "vpc-0aaa111111111111a",
+    "CidrBlock": "10.0.1.0/24",
+    "AvailabilityZone": "eu-west-1a",
+    "Tags": [{"Key": "Name", "Value": "main-subnet"}]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "LoadBalancerArn": "arn:aws:elasticloadbalancing:eu-west-1:123456789012:loadbalancer/app/web-alb/aaa1111111111111",
+    "LoadBalancerName": "web-alb",
+    "Type": "application",
+    "State": {"Code": "active"},
+    "VpcId": "vpc-0aaa111111111111a",
+    "AvailabilityZones": [{"ZoneName": "eu-west-1a", "SubnetId": "subnet-0aaa111111111111a"}],
+    "SecurityGroups": ["sg-0aaa111111111111a"]
+  },
+  {
+    "LoadBalancerArn": "arn:aws:elasticloadbalancing:eu-west-1:123456789012:loadbalancer/app/abandoned-alb/bbb2222222222222",
+    "LoadBalancerName": "abandoned-alb",
+    "Type": "application",
+    "State": {"Code": "active"},
+    "VpcId": "vpc-0aaa111111111111a",
+    "AvailabilityZones": [{"ZoneName": "eu-west-1a", "SubnetId": "subnet-0aaa111111111111a"}],
+    "SecurityGroups": ["sg-0bbb222222222222b"]
+  }
+]

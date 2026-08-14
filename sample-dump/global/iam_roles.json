@@ -1,0 +1,20 @@
+[
+  {
+    "RoleName": "WebAppRole",
+    "RoleId": "AROA111111111111111AA",
+    "Arn": "arn:aws:iam::123456789012:role/WebAppRole",
+    "Path": "/",
+    "AssumeRolePolicyDocument": "{}",
+    "AttachedManagedPolicies": [{"PolicyArn": "arn:aws:iam::123456789012:policy/WebAppPolicy", "PolicyName": "WebAppPolicy"}],
+    "Tags": [{"Key": "Name", "Value": "WebAppRole"}]
+  },
+  {
+    "RoleName": "OldBatchRole",
+    "RoleId": "AROA222222222222222BB",
+    "Arn": "arn:aws:iam::123456789012:role/OldBatchRole",
+    "Path": "/",
+    "AssumeRolePolicyDocument": "{}",
+    "AttachedManagedPolicies": [],
+    "Tags": [{"Key": "Name", "Value": "OldBatchRole"}]
+  }
+]

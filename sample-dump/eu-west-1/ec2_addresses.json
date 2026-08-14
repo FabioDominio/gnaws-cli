@@ -1,0 +1,14 @@
+[
+  {
+    "AllocationId": "eipalloc-0aaa111111111111a",
+    "PublicIp": "54.100.10.1",
+    "AssociationId": "eipassoc-0aaa111111111111a",
+    "InstanceId": "i-0aaa111111111111a",
+    "Tags": [{"Key": "Name", "Value": "web-server-eip"}]
+  },
+  {
+    "AllocationId": "eipalloc-0bbb222222222222b",
+    "PublicIp": "54.100.10.2",
+    "Tags": [{"Key": "Name", "Value": "unused-eip"}]
+  }
+]

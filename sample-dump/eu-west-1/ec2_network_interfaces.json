@@ -1,0 +1,19 @@
+[
+  {
+    "NetworkInterfaceId": "eni-0aaa111111111111a",
+    "Status": "in-use",
+    "SubnetId": "subnet-0aaa111111111111a",
+    "VpcId": "vpc-0aaa111111111111a",
+    "Groups": [{"GroupId": "sg-0aaa111111111111a", "GroupName": "web-sg"}],
+    "Attachment": {"InstanceId": "i-0aaa111111111111a", "Status": "attached"},
+    "Tags": [{"Key": "Name", "Value": "web-server-eni"}]
+  },
+  {
+    "NetworkInterfaceId": "eni-0bbb222222222222b",
+    "Status": "available",
+    "SubnetId": "subnet-0aaa111111111111a",
+    "VpcId": "vpc-0aaa111111111111a",
+    "Groups": [{"GroupId": "sg-0bbb222222222222b", "GroupName": "orphaned-sg"}],
+    "Tags": [{"Key": "Name", "Value": "leftover-eni"}]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "PolicyName": "WebAppPolicy",
+    "PolicyId": "ANPA111111111111111AA",
+    "Arn": "arn:aws:iam::123456789012:policy/WebAppPolicy",
+    "AttachmentCount": 2,
+    "IsAttachable": true,
+    "Tags": []
+  },
+  {
+    "PolicyName": "OldMigrationPolicy",
+    "PolicyId": "ANPA222222222222222BB",
+    "Arn": "arn:aws:iam::123456789012:policy/OldMigrationPolicy",
+    "AttachmentCount": 0,
+    "IsAttachable": true,
+    "Tags": []
+  }
+]

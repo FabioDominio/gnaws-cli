@@ -1,0 +1,18 @@
+[
+  {
+    "CertificateArn": "arn:aws:acm:eu-west-1:123456789012:certificate/aaaa1111-1111-1111-1111-111111111111",
+    "DomainName": "app.example.com",
+    "Status": "ISSUED",
+    "InUseBy": ["arn:aws:elasticloadbalancing:eu-west-1:123456789012:loadbalancer/app/web-alb/aaa1111111111111"],
+    "Type": "AMAZON_ISSUED",
+    "Tags": [{"Key": "Name", "Value": "app-cert"}]
+  },
+  {
+    "CertificateArn": "arn:aws:acm:eu-west-1:123456789012:certificate/bbbb2222-2222-2222-2222-222222222222",
+    "DomainName": "old-api.example.com",
+    "Status": "ISSUED",
+    "InUseBy": [],
+    "Type": "AMAZON_ISSUED",
+    "Tags": [{"Key": "Name", "Value": "old-api-cert"}]
+  }
+]

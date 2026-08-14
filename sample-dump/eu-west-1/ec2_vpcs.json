@@ -1,0 +1,8 @@
+[
+  {
+    "VpcId": "vpc-0aaa111111111111a",
+    "CidrBlock": "10.0.0.0/16",
+    "State": "available",
+    "Tags": [{"Key": "Name", "Value": "main-vpc"}]
+  }
+]

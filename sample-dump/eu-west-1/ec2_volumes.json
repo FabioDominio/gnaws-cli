@@ -1,0 +1,29 @@
+[
+  {
+    "VolumeId": "vol-0aaa111111111111a",
+    "State": "in-use",
+    "Size": 50,
+    "VolumeType": "gp3",
+    "AvailabilityZone": "eu-west-1a",
+    "Attachments": [{"InstanceId": "i-0aaa111111111111a", "State": "attached"}],
+    "Tags": [{"Key": "Name", "Value": "web-server-root"}]
+  },
+  {
+    "VolumeId": "vol-0bbb222222222222b",
+    "State": "available",
+    "Size": 100,
+    "VolumeType": "gp3",
+    "AvailabilityZone": "eu-west-1a",
+    "Attachments": [],
+    "Tags": [{"Key": "Name", "Value": "old-data-volume"}]
+  },
+  {
+    "VolumeId": "vol-0ccc333333333333c",
+    "State": "available",
+    "Size": 500,
+    "VolumeType": "io2",
+    "AvailabilityZone": "eu-west-1b",
+    "Attachments": [],
+    "Tags": [{"Key": "Name", "Value": "forgotten-db-volume"}]
+  }
+]

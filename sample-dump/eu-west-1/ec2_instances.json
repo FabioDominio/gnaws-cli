@@ -1,0 +1,11 @@
+[
+  {
+    "InstanceId": "i-0aaa111111111111a",
+    "InstanceType": "t3.medium",
+    "State": {"Code": 16, "Name": "running"},
+    "SubnetId": "subnet-0aaa111111111111a",
+    "VpcId": "vpc-0aaa111111111111a",
+    "SecurityGroups": [{"GroupId": "sg-0aaa111111111111a", "GroupName": "web-sg"}],
+    "Tags": [{"Key": "Name", "Value": "web-server"}]
+  }
+]

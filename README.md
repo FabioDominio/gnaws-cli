@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/badge/license-AGPL--3.0-blue)](LICENSE)
 [![node](https://img.shields.io/node/v/@gnaws/cli)](package.json)
 
-Interactive CLI for [@gnaws/core](https://www.npmjs.com/package/@gnaws/core) — scan your AWS account, build the resource graph, detect unused resources, and export to Gephi/sigma.js/Markdown.
+Interactive CLI for [@gnaws/core](https://www.npmjs.com/package/@gnaws/core) — scan your AWS account, build the resource graph, detect unused resources, and export to Gephi/sigma.js/Markdown/CSV.
 
 ## Installation
 
@@ -27,7 +27,7 @@ gnaws> /scan [profile]        Scan live AWS account and build graph
 gnaws> /load <path>           Load from a local dump (no credentials needed)
 gnaws> /sample                Load bundled sample data to try detection/export
 gnaws> /detect [output.md]    Detect unused resources (optionally save report)
-gnaws> /export <gexf|json|md> [path]  Export graph
+gnaws> /export <gexf|json|md|csv> [path]  Export graph
 gnaws> /dump [path]           Dump inventory to JSON files for offline use
 gnaws> /regions               List scanned regions
 gnaws> /help                  Show all commands

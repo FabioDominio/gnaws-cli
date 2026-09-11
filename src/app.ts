@@ -16,7 +16,7 @@ if (existsSync(".env")) {
 
 import type {AwsCredentialIdentityProvider} from "@aws-sdk/types";
 import {fromIni} from "@aws-sdk/credential-providers";
-import {Inventory, GraphBuilder, MarkdownExporter, GexfExporter, JsonExporter, LiveServiceFactory, CacheServiceFactory, CacheWriter, UnusedDetector} from "@gnaws/core";
+import {Inventory, GraphBuilder, MarkdownExporter, CsvExporter, GexfExporter, JsonExporter, LiveServiceFactory, CacheServiceFactory, CacheWriter, UnusedDetector} from "@gnaws/core";
 import type {DirectedGraph} from "graphology";
 import chalk from "chalk";
 import ora from "ora";
@@ -281,10 +281,11 @@ const commands: Record<string, {"description": string;
             if (!format || ![
                 "gexf",
                 "json",
-                "md"
+                "md",
+                "csv"
             ].includes(format)) {
 
-                console.log(chalk.yellow("Usage: /export <gexf|json|md> [path]"));
+                console.log(chalk.yellow("Usage: /export <gexf|json|md|csv> [path]"));
                 return;
 
             }
@@ -329,6 +330,19 @@ const commands: Record<string, {"description": string;
                         : customPath + ext
                     : "report.md";
                 new MarkdownExporter().export(
+                    outputPath,
+                    inventory,
+                    graph
+                );
+
+            } else if (format === "csv") {
+
+                outputPath = customPath
+                    ? customPath.endsWith(ext)
+                        ? customPath
+                        : customPath + ext
+                    : "inventory.csv";
+                new CsvExporter().export(
                     outputPath,
                     inventory,
                     graph

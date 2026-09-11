@@ -1,6 +1,6 @@
 {
   "name": "@gnaws/cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "GNAWS CLI — See what's beneath your cloud",
   "license": "AGPL-3.0-only",
   "keywords": [
